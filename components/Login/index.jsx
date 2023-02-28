@@ -12,7 +12,7 @@ const Login = () => {
                     <div className='fs-6 text-secondary mt-3'>Masukkan </div>
                     <input type="password" class="form-control" placeholder="Masukkan kata sandi" />
                     <div className="fs-6 text-dark mt-3 align-self-end">Lupa kata sandi?</div>
-                    <button type="button" class="btn btn-warning text-white mt-3 p-2">Masuk</button>
+                    <button type="button" class="btn btn-warning text-white mt-3 p-2 w-100">Masuk</button>
                 </form>
                 <div className='d-flex align-self-center mt-3'>
                     <span>Anda belum punya akun?</span>

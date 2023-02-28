@@ -8,7 +8,7 @@ const AccountBanner = () => {
                 <div className={styles.overlay + " text-white fw-bold fs-1 align-middle d-flex flex-column justify-content-center"}>
                     <span>Temukan developer berbakat & terbaik di berbagai bidang keahlian</span>
                 </div>
-                <img className={"img-fluid " + styles.image} crossOrigin='anonymous' src="img/account-banner.jpg" />
+                <img className={"img-fluid " + styles.image} crossOrigin='anonymous' src="img/account/account-banner.jpg" />
             </div>
         </div>
     )

@@ -1,0 +1,7 @@
+.purpleBackground{
+    position: absolute;
+    z-index: -1;
+    background-color: var(--purple);
+    width: 100vw;
+    height: 200px;
+}

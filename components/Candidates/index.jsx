@@ -5,7 +5,7 @@ const Candidates = (props) => {
   props
   return (
     <div className='container d-flex bg-white p-3'>
-      <img src="img/profile-picture.png" className="img-fluid rounded-circle" alt="Profile" />
+      <img src="img/profile/profile-picture.png" className="img-fluid rounded-circle" alt="Profile" />
       <div className='d-flex flex-column ms-3'>
         <div className='fs-5'>{props.name}</div>
         <div className='text-secondary'>Web Developer</div>

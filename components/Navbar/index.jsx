@@ -5,9 +5,9 @@ import Button from '../Button'
 
 const Navbar = () => {
   return (
-    <nav class="navbar navbar-expand-lg bg-light sticky-top">
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Peworld</a>
+        <a class="navbar-brand" href="#">Hirejob</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>

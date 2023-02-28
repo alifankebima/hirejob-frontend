@@ -7,6 +7,7 @@ import Button from '../components/Button'
 import CandidateList from '../components/CandidateList'
 import Footer from '../components/Footer'
 import Profile from '../components/Profile'
+import PurpleBackground from '../components/PurpleBackground'
 
 const home = () => {
   return (

@@ -1,0 +1,212 @@
+{
+  "candidates": [
+    {
+      "id": 1,
+      "name": "Ikhlasul Kamal Irmansyah",
+      "jobdesk": "Backend Engineer",
+      "residence": "Jakarta",
+      "workplace": "Jakarta",
+      "description": "Full Stack Developer | Express JS | React JS",
+      "skill": [
+        "Rust",
+        "Golang",
+        "JavaScript"
+      ],
+      "work_experience": [
+        {
+          "position": "Backend Engineer",
+          "company_name": "Tokopedia",
+          "date": "Maret, 2023",
+          "description": "Optimisasi performa backend Tokopedia"
+        },
+        {
+          "position": "Full Stack Web Developer",
+          "company_name": "PT Iqbal Aprido",
+          "date": "Januari, 2024",
+          "description": "Membuat website pendaftaran bootcamp Iqbal"
+        }
+      ],
+      "portfolio": [
+        {
+          "app_name": "Markisak",
+          "repo_link": "https://github.com/ikkair/markisak-fe",
+          "app_type": "Website",
+          "image": "http://localhost:3000/img/profile/markisak.png"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Muhammad Ilham Darmawan",
+      "jobdesk": "Fullstack Web Developer",
+      "residence": "Jakarta",
+      "workplace": "Jakarta",
+      "description": "Full Stack Developer | Express JS | React JS",
+      "skill": [
+        "JavaScript",
+        "React",
+        "Next JS",
+        "Express"
+      ],
+      "work_experience": [
+        {
+          "position": "Backend Engineer",
+          "company_name": "Google",
+          "date": "Maret, 2023",
+          "description": "Optimisasi performa backend search engine Google"
+        },
+        {
+          "position": "Full Stack Web Developer",
+          "company_name": "PT Iqbal Aprido",
+          "date": "Januari, 2024",
+          "description": "Membuat website pendaftaran bootcamp"
+        }
+      ],
+      "portfolio": [
+        {
+          "app_name": "Markisak",
+          "repo_link": "https://github.com/ikkair/markisak-fe",
+          "app_type": "Website",
+          "image": "http://localhost:3000/img/profile/markisak.png"
+        },
+        {
+          "app_name": "Blanja",
+          "repo_link": "https://markisak-fe.vercel.app/",
+          "app_type": "Website",
+          "image": "http://localhost:3000/img/profile/blanja.png"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Andiko Oktavianto",
+      "jobdesk": "Fullstack Web Developer",
+      "residence": "Jakarta",
+      "workplace": "Jakarta",
+      "description": "Full Stack Developer | Express JS | React JS",
+      "skill": [
+        "JavaScript",
+        "React",
+        "Next JS",
+        "Express"
+      ],
+      "work_experience": [
+        {
+          "position": "Backend Engineer",
+          "company_name": "Shopee",
+          "date": "Maret, 2023",
+          "description": "Membuat backend dari awal untuk E-Commerce Shopee"
+        },
+        {
+          "position": "Full Stack Web Developer",
+          "company_name": "PT Iqbal Aprido",
+          "date": "Januari, 2024",
+          "description": "Membuat website pendaftaran bootcamp"
+        }
+      ],
+      "portfolio": [
+        {
+          "app_name": "Markisak",
+          "repo_link": "https://github.com/ikkair/markisak-fe",
+          "app_type": "Website",
+          "image": "http://localhost:3000/img/profile/markisak.png"
+        },
+        {
+          "app_name": "Blanja",
+          "repo_link": "https://markisak-fe.vercel.app/",
+          "app_type": "Website",
+          "image": "http://localhost:3000/img/profile/blanja.png"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Muhammad Iqbal Aprido",
+      "jobdesk": "Fullstack Web Developer",
+      "residence": "Jakarta",
+      "workplace": "Jakarta",
+      "description": "Full Stack Developer | Express JS | React JS",
+      "skill": [
+        "JavaScript",
+        "React",
+        "Next JS",
+        "Express"
+      ],
+      "work_experience": [
+        {
+          "position": "Frontend Developer",
+          "company_name": "Shopee",
+          "date": "Maret, 2023",
+          "description": "Membuat backend dari awal untuk E-Commerce Shopee"
+        },
+        {
+          "position": "Founder",
+          "company_name": "PT Iqbal Aprido",
+          "date": "Januari, 2024",
+          "description": "Membangun bootcamp Iqbal Full Stack Website Developer"
+        }
+      ],
+      "portfolio": [
+        {
+          "app_name": "Markisak",
+          "repo_link": "https://github.com/ikkair/markisak-fe",
+          "app_type": "Website",
+          "image": "http://localhost:3000/img/profile/markisak.png"
+        },
+        {
+          "app_name": "Blanja",
+          "repo_link": "https://markisak-fe.vercel.app/",
+          "app_type": "Website",
+          "image": "http://localhost:3000/img/profile/blanja.png"
+        }
+      ]
+    },
+    {
+      "name": "Andiko Oktaviantooooooooooooo",
+      "jobdesk": "Fullstack Web Developer",
+      "residence": "Jakarta",
+      "workplace": "Jakarta",
+      "description": "Full Stack Web Developer | React JS | Next JS",
+      "skill": [
+        "JavaScript",
+        "React JS",
+        "Next JS",
+        "Express"
+      ],
+      "work_experience": [
+        {
+          "position": "Backend Engineer",
+          "company_name": "Google",
+          "date": "Maret, 2022",
+          "description": "Optimisasi performa backend search engine Google"
+        }
+      ],
+      "portfolio": [
+        {
+          "app_name": "Markisak",
+          "repo_link": "https://markisak-fe.vercel.app/",
+          "app_type": "Website",
+          "image": "http://localhost:3000/img/profile/markisak.png"
+        },
+        {
+          "app_name": "Blanja",
+          "repo_link": "https://markisak-fe.vercel.app/",
+          "app_type": "Website",
+          "image": "http://localhost:3000/img/profile/blanja.png"
+        }
+      ],
+      "id": 5
+    }
+  ],
+  "hire": [
+    {
+      "id": 1,
+      "id_candidate": 1,
+      "purpose": "Hire job",
+      "name": "Alif Anke Bima Putra",
+      "email": "alif.anke.bima@gmail.com",
+      "phone_number": "085718516646",
+      "description": "Hi, we would like to interview with you"
+    }
+  ]
+}
