@@ -1,5 +1,5 @@
 {
-  "candidates": [
+  "workers": [
     {
       "id": 1,
       "name": "Ikhlasul Kamal Irmansyah",
@@ -7,6 +7,7 @@
       "residence": "Jakarta",
       "workplace": "Jakarta",
       "description": "Full Stack Developer | Express JS | React JS",
+      "image": "http://localhost:3000/img/profile/kamal.jpeg",
       "skill": [
         "Rust",
         "Golang",
@@ -42,6 +43,7 @@
       "residence": "Jakarta",
       "workplace": "Jakarta",
       "description": "Full Stack Developer | Express JS | React JS",
+      "image": "http://localhost:3000/img/profile/ilham.jpeg",
       "skill": [
         "JavaScript",
         "React",
@@ -80,10 +82,11 @@
     {
       "id": 3,
       "name": "Andiko Oktavianto",
-      "jobdesk": "Fullstack Web Developer",
+      "jobdesk": "Android Developer",
       "residence": "Jakarta",
       "workplace": "Jakarta",
       "description": "Full Stack Developer | Express JS | React JS",
+      "image": "http://localhost:3000/img/profile/profile-picture.png",
       "skill": [
         "JavaScript",
         "React",
@@ -122,10 +125,11 @@
     {
       "id": 4,
       "name": "Muhammad Iqbal Aprido",
-      "jobdesk": "Fullstack Web Developer",
+      "jobdesk": "iOS Developer",
       "residence": "Jakarta",
       "workplace": "Jakarta",
       "description": "Full Stack Developer | Express JS | React JS",
+      "image": "http://localhost:3000/img/profile/iqbal.jpeg",
       "skill": [
         "JavaScript",
         "React",
@@ -162,29 +166,38 @@
       ]
     },
     {
-      "name": "Andiko Oktaviantooooooooooooo",
-      "jobdesk": "Fullstack Web Developer",
-      "residence": "Jakarta",
+      "id": 5,
+      "name": "Alif Anke Bima Putra",
+      "jobdesk": "Backend Engineer",
+      "residence": "Kab. Bekasi",
       "workplace": "Jakarta",
-      "description": "Full Stack Web Developer | React JS | Next JS",
+      "description": "Full Stack Developer | Express JS | React JS",
+      "image": "http://localhost:3000/img/profile/alif.jpeg",
       "skill": [
         "JavaScript",
-        "React JS",
-        "Next JS",
-        "Express"
+        "Express",
+        "Dart",
+        "Python",
+        "PHP"
       ],
       "work_experience": [
         {
-          "position": "Backend Engineer",
-          "company_name": "Google",
-          "date": "Maret, 2022",
-          "description": "Optimisasi performa backend search engine Google"
+          "position": "Backend Developer",
+          "company_name": "Tokopedia",
+          "date": "Maret, 2023",
+          "description": "Optimisasi backend E-Commerce Tokopedia"
+        },
+        {
+          "position": "Backend Developer",
+          "company_name": "PT Iqbal Aprido",
+          "date": "Januari, 2024",
+          "description": "Membangun bootcamp Iqbal Full Stack Website Developer"
         }
       ],
       "portfolio": [
         {
           "app_name": "Markisak",
-          "repo_link": "https://markisak-fe.vercel.app/",
+          "repo_link": "https://github.com/ikkair/markisak-fe",
           "app_type": "Website",
           "image": "http://localhost:3000/img/profile/markisak.png"
         },
@@ -194,8 +207,7 @@
           "app_type": "Website",
           "image": "http://localhost:3000/img/profile/blanja.png"
         }
-      ],
-      "id": 5
+      ]
     }
   ],
   "hire": [

@@ -1,25 +1,28 @@
+import Link from 'next/link'
 import React from 'react'
 import Button from '../Button'
 
 const Candidates = (props) => {
-  props
+
   return (
     <div className='container d-flex bg-white p-3'>
-      <img src="img/profile/profile-picture.png" className="img-fluid rounded-circle" alt="Profile" />
+      <img src={props.image} className="img-fluid rounded-circle" style={{width:"100px", height:"100px"}} alt="Profile" />
       <div className='d-flex flex-column ms-3'>
         <div className='fs-5'>{props.name}</div>
-        <div className='text-secondary'>Web Developer</div>
-        <div className='text-secondary'>Lorem Ipsum</div>
+        <div className='text-secondary'>{props.jobdesk}</div>
+        <div className='text-secondary'>{props.residence}</div>
         <div className='d-flex'>
-          <span class="badge text-bg-warning">HTML</span>
-          <span class="badge text-bg-warning">CSS</span>
-          <span class="badge text-bg-warning">JavaScript</span>
+        {props.skill && props.skill.map((data) =>
+        <span class="badge text-bg-warning text-white me-2">{data}</span>
+      )}
         </div>
       </div>
       <div className='ms-auto align-self-center'>
-      <Button text="Lihat Profile" />
+        <Link href={props.link}>
+          <Button text="Lihat Profile" />
+        </Link>
       </div>
-      
+
     </div>
   )
 }
