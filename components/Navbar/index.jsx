@@ -1,15 +1,26 @@
-import React, { Fragment, useEffect } from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
 import ButtonOutline from '../ButtonOutline'
 import Button from '../Button'
 import Link from 'next/link'
-
+import { BsBellFill } from "react-icons/bs";
 
 
 const Navbar = (props) => {
+  const [id, setId] = useState(1)
+
+
   const LoginButton = () => {
     if (props.isAuth) {
       return (
         <Fragment>
+          <Link href={`/worker/${id}/notification`}>
+            <button type="button" class="btn btn-secondary position-relative me-4">
+              <BsBellFill />
+              <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                <span class="visually-hidden">New alerts</span>
+              </span>
+            </button>
+          </Link>
           <Link href="/logout"><Button text="Logout" /></Link>
         </Fragment>
       )

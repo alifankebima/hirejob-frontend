@@ -1,7 +1,13 @@
-import { Fragment } from 'react'
+import Link from 'next/link';
+import { Fragment, useEffect } from 'react'
 import Navbar from '../components/Navbar'
+import Button from '../components/Button'
 
 export default function Home() {
+  useEffect(() => {
+    document.title = "Peworld";
+  });
+  
   return (
     <Fragment>
       <Navbar />

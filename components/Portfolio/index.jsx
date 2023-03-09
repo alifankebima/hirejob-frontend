@@ -27,6 +27,7 @@ const Portfolio = (props) => {
         </div>
         <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
           <div className="d-flex flex-column">
+            
           {props.workExperience && props.workExperience.map((item) =>
                 <div className='d-flex'>
                 <img className="img p-3 mx-3" style={{maxWidth:"100px", maxHeight:"100px"}} src="http://localhost:4000/img/profile/office-building(1).png" alt="tokopedia" />

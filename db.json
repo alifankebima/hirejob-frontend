@@ -1,8 +1,7 @@
 {
-  "workers": [
+  "worker": [
     {
-      "id": 1,
-      "name": "Ikhlasul Kamal Irmansyah",
+      "name": "Ikhlasul Kamal Irmansyah Baru",
       "jobdesk": "Backend Engineer",
       "residence": "Jakarta",
       "workplace": "Jakarta",
@@ -34,7 +33,8 @@
           "app_type": "Website",
           "image": "http://localhost:3000/img/profile/markisak.png"
         }
-      ]
+      ],
+      "id": 1
     },
     {
       "id": 2,
@@ -212,13 +212,13 @@
   ],
   "hire": [
     {
-      "id": 1,
-      "id_candidate": 1,
-      "purpose": "Hire job",
-      "name": "Alif Anke Bima Putra",
+      "id_worker": 1,
+      "reason": "project",
+      "name": "Alif",
       "email": "alif.anke.bima@gmail.com",
-      "phone_number": "085718516646",
-      "description": "Hi, we would like to interview with you"
+      "phone_number": "081212345678",
+      "description": "eh enggak jadi deh",
+      "id": 3
     }
   ]
 }

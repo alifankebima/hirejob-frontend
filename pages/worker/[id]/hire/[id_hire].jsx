@@ -1,18 +1,21 @@
 import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
-import Navbar from '../../components/Navbar';
-import Profile from '../../components/Profile';
-import Portfolio from '../../components/Portfolio';
-import Footer from '../../components/Footer';
+import Navbar from '../../../../components/Navbar';
+import Profile from '../../../../components/Profile';
+import Portfolio from '../../../../components/Portfolio';
+import Footer from '../../../../components/Footer';
 import axios from 'axios';
+import HireForm2 from '../../../../components/HireForm2';
 
 
 const detailProfile = () => {
   const router = useRouter();
   const [worker, setWorker] = useState([]);
+  const [hireId, setHireId] = useState();
 
   useEffect(() => {
     if (router.isReady) {
+      setHireId(router.query.id_hire)
       axios.get(`http://localhost:4000/workers/${router.query.id}`)
         .then((res) => {
           setWorker(res.data);
@@ -28,7 +31,7 @@ const detailProfile = () => {
       <div className="container mt-5">
         <div className="row">
           <Profile name={worker.name} skill={worker.skill} image={worker.image} jobdesk={worker.jobdesk} residence={worker.residence} workplace={worker.workplace} description={worker.description}/>
-          <Portfolio portfolio={worker.portfolio} workExperience={worker.work_experience}/>
+          <HireForm2 name={worker.name} id={worker.id} id_hire={hireId}/>
         </div>
       </div>
       <Footer />
