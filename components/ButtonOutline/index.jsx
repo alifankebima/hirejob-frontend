@@ -3,7 +3,7 @@ import styles from './ButtonOutline.module.css'
 
 const ButtonOutline = (props) => {
   return (
-    <button className={`${props.class} ${styles.button} rounded`}>{props.text}</button>
+    <button className={`${props.className} ${styles.button} rounded`}>{props.text}</button>
   )
 }
 

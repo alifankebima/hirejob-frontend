@@ -12,7 +12,7 @@ const worker = () => {
     <div className='bg-light' >
       <Navbar />
       <TopJobs />
-      <Search />
+      {/* <Search /> */}
       <CandidateList />
       <Footer />
     </div>

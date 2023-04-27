@@ -1,5 +1,7 @@
 import React from 'react'
 import styles from './account.module.css'
+import Image from 'next/image'
+import AccountBannerImage from '../../public/img/account/account-banner.jpg'
 
 const AccountBanner = () => {
     return (
@@ -8,7 +10,7 @@ const AccountBanner = () => {
                 <div className={styles.overlay + " text-white fw-bold fs-1 align-middle d-flex flex-column justify-content-center"}>
                     <span>Temukan developer berbakat & terbaik di berbagai bidang keahlian</span>
                 </div>
-                <img className={"img-fluid " + styles.image} crossOrigin='anonymous' src="img/account/account-banner.jpg" />
+                <Image className={"img-fluid " + styles.image} crossOrigin='anonymous' src={AccountBannerImage} />
             </div>
         </div>
     )

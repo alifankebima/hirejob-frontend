@@ -9,20 +9,20 @@ const RegisterForm = () => {
         <div className="mt-2 text-secondary">Daftar akun rekruter untuk mencari pekerja dengan kualifikasi tinggi</div>
         <form onSubmit="#">
           <div className='fs-6 text-secondary mt-5'>Nama</div>
-          <input type="text" class="form-control" placeholder="Masukkan nama lengkap" />
+          <input type="text" className="form-control" placeholder="Masukkan nama lengkap" />
           <div className='fs-6 text-secondary mt-3'>Email</div>
-          <input type="password" class="form-control" placeholder="Masukkan alamat email" />
+          <input type="password" className="form-control" placeholder="Masukkan alamat email" />
           <div className='fs-6 text-secondary mt-3'>Perusahaan</div>
-          <input type="password" class="form-control" placeholder="Masukkan nama perusahaan" />
+          <input type="password" className="form-control" placeholder="Masukkan nama perusahaan" />
           <div className='fs-6 text-secondary mt-3'>Jabatan</div>
-          <input type="password" class="form-control" placeholder="Posisi di perusahaan anda" />
+          <input type="password" className="form-control" placeholder="Posisi di perusahaan anda" />
           <div className='fs-6 text-secondary mt-3'>No handphone</div>
-          <input type="password" class="form-control" placeholder="Masukkan no handphone" />
+          <input type="password" className="form-control" placeholder="Masukkan no handphone" />
           <div className='fs-6 text-secondary mt-3'>Kata sandi</div>
-          <input type="password" class="form-control" placeholder="Masukkan kata sandi" />
+          <input type="password" className="form-control" placeholder="Masukkan kata sandi" />
           <div className='fs-6 text-secondary mt-3'>Konfirmasi kata sandi</div>
-          <input type="password" class="form-control" placeholder="Masukkan ulang kata sandi" />
-          <Link href={"/login"}><button class="btn btn-warning text-white mt-5 p-2 w-100">Daftar</button></Link>
+          <input type="password" className="form-control" placeholder="Masukkan ulang kata sandi" />
+          <Link href={"/login"}><button className="btn btn-warning text-white mt-5 p-2 w-100">Daftar</button></Link>
 
         </form>
         <div className='d-flex align-self-center mt-3'>

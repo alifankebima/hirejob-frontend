@@ -14,9 +14,9 @@ const detailProfile = () => {
 
   useEffect(() => {
     if (router.isReady) {
-      axios.get(`http://localhost:4000/workers/${router.query.id}`)
+      axios.get(`http://localhost:4000/v1/worker/${router.query.id}`)
         .then((res) => {
-          setWorker(res.data);
+          setWorker(res.data.data[0]);
           console.log(worker);
         })
         .catch((err) => console.log(err))

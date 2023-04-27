@@ -5,9 +5,9 @@ const Search = () => {
     return (
         <div className='container mt-5 shadow-sm'>
             <form onSubmit="#" className='d-flex'>
-                <input type="email" class="form-control border-0" placeholder="Search for any skill" />
+                <input type="email" className="form-control border-0" placeholder="Search for any skill" />
                 <button>Kategori</button>
-                <Button text="Submit" class=""/>
+                <Button text="Submit" className=""/>
             </form>
         </div>
     )

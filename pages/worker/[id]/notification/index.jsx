@@ -13,8 +13,14 @@ const detailProfile = () => {
   const router = useRouter();
   const [hire, setHire] = useState();
 
+  const authWorker = {
+    headers: {
+        Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImMyZDc3ZDg2LWZhODQtNGVjNS05OGFiLTBhNDc3Y2ZhOTBkZCIsImVtYWlsIjoiYWxpZi53b3JrZXJAZ21haWwuY29tIiwicm9sZSI6IndvcmtlciIsImlhdCI6MTY3ODQxMjE4MCwiZXhwIjoxNjc4NDk4NTgwLCJpc3MiOiJoaXJlam9iIn0.blLE9Jb3orhxPhJrl1uwK7gzIR8_RQDPImLMkeK-MqU`
+    }
+  }
+
   const handleDelete = (id) => {
-    axios.delete(`http://localhost:4000/hire/${id}`)
+    axios.delete(`http://localhost:4000/v1/hire/${id}`, authWorker)
         .then((res) => {
           alert("delete success")
           window.location.reload();
@@ -27,9 +33,9 @@ const detailProfile = () => {
 
   useEffect(() => {
     if (router.isReady) {
-      axios.get(`http://localhost:4000/hire?id_worker=${router.query.id}`)
+      axios.get(`${process.env.NEXT_PUBLIC_API_URL}/v1/worker/${router.query.id}/hire`)
         .then((res) => {
-          setHire(res.data);
+          setHire(res.data.data);
         })
         .catch((err) => console.log(err))
     }
@@ -51,7 +57,11 @@ const detailProfile = () => {
                   <div>{data.reason}</div>
                   <div>{data.description}</div>
                 </div>
-                <div className='ms-auto align-self-center'>
+                <div className='ms-auto align-self-center'><Link href={`/worker/${router.query.id}/hire/${data.id}`}>
+                  <button className='btn btn-secondary'>Edit</button>
+                  </Link>
+                </div>
+                <div className='ms-2 align-self-center'>
                   <button className='btn btn-danger' onClick={() => handleDelete(data.id)}>Delete</button>
                 </div>
               </div>
