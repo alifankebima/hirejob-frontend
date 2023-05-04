@@ -24,7 +24,7 @@ const Portfolio = (props) => {
                 {props.portfolio && props.portfolio.map((item) =>
                   <a key={item.id} className="col-sm-6 col-md-4 text-decoration-none text-body" href={item.repo_link}>
                     <div className="d-flex flex-column align-items-center bg-light rounded p-2">
-                      <Image src={item.image || ""} width={240} height={115} crossOrigin="anonymous" className={"img-fluid rounded"} alt={item.name} />
+                      <Image src={item.image || ""} width={240} height={115} className={"img-fluid rounded"} alt={item.name} />
                       <div className='mt-2'>{item.name}</div>
                     </div>
                   </a>
