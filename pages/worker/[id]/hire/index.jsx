@@ -2,7 +2,6 @@ import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
 import Navbar from '../../../../components/Navbar';
 import Profile from '../../../../components/Profile';
-import Portfolio from '../../../../components/Portfolio';
 import Footer from '../../../../components/Footer';
 import axios from 'axios';
 import HireForm from '../../../../components/HireForm';
@@ -14,7 +13,7 @@ const detailProfile = () => {
 
   useEffect(() => {
     if (router.isReady) {
-      axios.get(`http://localhost:4000/v1/worker/${router.query.id}`)
+      axios.get(`${process.env.NEXT_PUBLIC_API_URL}/v1/worker/${router.query.id}`)
         .then((res) => {
           setWorker(res.data.data[0]);
           console.log(worker);

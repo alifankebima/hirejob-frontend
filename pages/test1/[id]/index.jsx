@@ -9,7 +9,7 @@ const test1 = () => {
 
     useEffect(() => {
         // if (router.isReady) {
-        //     axios.get(`http://localhost:4000/v1/worker`)
+        //     axios.get(`${process.env.NEXT_PUBLIC_API_URL}/v1/worker`)
         //         .then((res) => {
         //             setWorker(res.data.data[0]);
         //             console.log(res.data.data);

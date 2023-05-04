@@ -1,5 +1,4 @@
 import axios from 'axios';
-import Link from 'next/link'
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react'
 
@@ -18,7 +17,7 @@ const HireForm2 = (props) => {
 
   useEffect(() => {
     if (router.isReady) {
-      axios.get(`http://localhost:4000/v1/hire/${router.query.id_hire}`)
+      axios.get(`${process.env.NEXT_PUBLIC_API_URL}/v1/hire/${router.query.id_hire}`)
         .then((res) => {
           setData(res.data.data[0]);
           console.log(res.data)
@@ -43,7 +42,7 @@ const HireForm2 = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.put(`http://localhost:4000/v1/hire/${router.query.id_hire}`, data, recruiterAuth)
+    axios.put(`${process.env.NEXT_PUBLIC_API_URL}/v1/hire/${router.query.id_hire}`, data, recruiterAuth)
       .then((res) => {
         console.log(res.data);
         alert("update success")

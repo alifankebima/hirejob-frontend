@@ -8,13 +8,13 @@ const Footer = () => {
         <footer className="pt-5">
           <div className="row">
             <div className="col-6 col-md-4 mb-3">
-              <h3>Peworld</h3>
-              <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In euismod ipsum et dui rhoncus auctor.</h6>
+              <h3>Hirejob</h3>
+              <h6>Pekerja terbaik di hirejob siap menghadapi industri 4.0</h6>
             </div>
           </div>
 
           <div className="d-flex flex-column flex-sm-row justify-content-between py-4 border-top">
-            <p>© Peworld, All rights reserved</p>
+            <p>© Hirejob, All rights reserved</p>
             <ul className="list-unstyled d-flex">
               <li className="ms-4">Telepon</li>
               <li className="ms-4">Email</li>

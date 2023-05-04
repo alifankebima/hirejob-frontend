@@ -1,5 +1,4 @@
-import { useRouter } from 'next/router'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Navbar from '../../../components/Navbar';
 import Profile from '../../../components/Profile';
 import Portfolio from '../../../components/Portfolio';
@@ -8,7 +7,7 @@ import axios from 'axios';
 
 export async function getServerSideProps(context) {
   const id = context.query.id;
-  const res = await axios.get(`http://localhost:4000/workers/${id}`);
+  const res = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/workers/${id}`);
   return {
     props: { worker : res.data },
   };
@@ -17,7 +16,7 @@ export async function getServerSideProps(context) {
 function SSR({worker}){
   // useEffect(() => {
   //   if (router.isReady) {
-  //     axios.get(`http://localhost:4000/workers/${router.query.id}`)
+  //     axios.get(`${process.env.NEXT_PUBLIC_API_URL}/workers/${router.query.id}`)
   //       .then((res) => {
   //         setWorker(res.data);
   //         console.log(worker);

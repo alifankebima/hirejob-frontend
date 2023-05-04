@@ -1,0 +1,8 @@
+.PortfolioSelector{
+    background-color: transparent;
+    
+}
+
+.PortfolioImage{
+    object-fit: cover;
+}

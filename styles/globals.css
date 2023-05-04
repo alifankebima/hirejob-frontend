@@ -1,26 +1,39 @@
-:root{
-  --purple: #5E50A1;
+:root {
+    --purple: #5E50A1;
 }
 
 html,
 body {
-  font-family: Open sans, Fira Sans, Droid Sans, sans-serif;
+    font-family: Open sans, Fira Sans, Droid Sans, sans-serif;
 }
 
 button {
-  box-sizing: border-box;
-  border: 0px;
-  transition-duration: 0.2s;
+    box-sizing: border-box;
+    font-weight: 400;
+    border: 0px;
+    transition-duration: 0.2s;
 }
 
 .bg-purple {
-  background-color: var(--purple);
+    background-color: var(--purple);
 }
 
 .text-purple {
-  color: var(--purple);
+    color: var(--purple);
 }
 
-.fs-7{
-  font-size: 0.9rem !important;
+.fs-7 {
+    font-size: 0.9rem !important;
+}
+
+button[class^="Portfolio_PortfolioSelector"].active {
+    border-bottom: 3px solid var(--purple);
+}
+
+button[class^="LoginForm_selectorWorker"].active,
+button[class^="LoginForm_selectorRecruiter"].active,
+button[class^="RegisterForm_selectorWorker"].active,
+button[class^="RegisterForm_selectorRecruiter"].active {
+    background-color: var(--bs-warning);
+    color: white;
 }

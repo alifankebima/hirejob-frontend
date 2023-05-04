@@ -9,7 +9,6 @@ import axios from 'axios';
 
 const detailProfile = () => {
   const router = useRouter();
-  // const [worker, setWorker] = useState({});
   const [worker, setWorker] = useState({
     name: "",
     skill: [],

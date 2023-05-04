@@ -14,11 +14,9 @@ const detailProfile = () => {
   const [hireId, setHireId] = useState();
 
   useEffect(() => {
-    console.log(router.query.id);
-
     if (router.isReady) {
       setHireId(router.query.id_hire)
-      axios.get(`http://localhost:4000/v1/worker/${router.query.id}`)
+      axios.get(`${process.env.NEXT_PUBLIC_API_URL}/v1/worker/${router.query.id}`)
         .then((res) => {
           setWorker(res.data.data[0]);
           

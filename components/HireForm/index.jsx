@@ -1,10 +1,11 @@
 import axios from 'axios';
-import Link from 'next/link'
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react'
+import Swal from 'sweetalert2';
 
 const HireForm = (props) => {
   const router = useRouter();
+  const [token, setToken] = useState("");
 
   const [data, setData] = useState({
     id_worker: props.id,
@@ -17,7 +18,7 @@ const HireForm = (props) => {
 
   useEffect(() => {
     if (router.isReady) {
-      axios.get(`http://localhost:4000/hire/${router.query.id_hire}`)
+      axios.get(`${process.env.NEXT_PUBLIC_API_URL}/hire/${router.query.id_hire}`)
         .then((res) => {
           setData(res.data);
           console.log(res.data)
@@ -34,22 +35,34 @@ const HireForm = (props) => {
     });
   };
 
+  useEffect(() => {
+    setToken(localStorage.getItem("token"))
+  }, [])
+
   const auth = {
     headers: {
-        Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNlOTdlZWIxLTM0ZDQtNGY2Ni04ZWIyLWM3ZDJiZmNlYTFkNyIsImVtYWlsIjoiYWxpZi5yZWNydWl0ZXJAZ21haWwuY29tIiwicm9sZSI6InJlY3J1aXRlciIsImlhdCI6MTY3ODQxMTQwMywiZXhwIjoxNjc4NDk3ODAzLCJpc3MiOiJoaXJlam9iIn0.iVNYGa8x9AmVjmLpMFACE5eIfc3pGdGjFl8brqX3Yqc`
+      Authorization: `Bearer ${token}`
     }
-}
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post(`http://localhost:4000/v1/worker/${props.id}/hire`, data, auth)
+    axios.post(`${process.env.NEXT_PUBLIC_API_URL}/v1/worker/${props.id}/hire`, data, auth)
       .then((res) => {
         console.log(res.data);
-        alert("create success")
-        window.location.reload();
-      }).catch((err) => {
-        console.log(err)
-        alert("create failed")
+        Swal.fire({
+          title: `Hire success`,
+          text: `${res.data.message}`,
+          icon: `success`
+        })
+        router.push("/worker")
+      }).catch((error) => {
+        console.log(error)
+        Swal.fire({
+          title: `Hire failed`,
+          text: `${error.response && error.response.data.message}`,
+          icon: `error`
+        })
       })
   }
 

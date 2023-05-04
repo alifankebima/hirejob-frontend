@@ -1,34 +1,119 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<br />
+<p align="center">
+  <div align="center">
+    <img height="150" src="./docs/readme/logo.svg" alt="hirejob" border="0"/>
+  </div>
+  <h3 align="center">Hirejob (Hiring App)</h3>
+  <p align="center">
+    <a href="https://github.com/alifankebima/hirejob-frontend"><strong>Explore the docs »</strong></a>
+    <br />
+    <a href="https://hirejob-frontend.vercel.app">View Demo</a>
+    ·
+    <a href="https://hirejob-backend-production-c841.up.railway.app">Api Demo</a>
+  </p>
+</p>
 
-## Getting Started
+## Table of Contents
 
-First, run the development server:
+- [Table of Contents](#table-of-contents)
+- [About The Project](#about-the-project)
+  - [Built With](#built-with)
+- [Getting Started](#getting-started)
+  - [Prerequisite](#prerequisites)
+  - [Installation](#installation)
+  - [Documentation](#documentation)
+- [Related Project](#related-project)
 
-```bash
-npm run dev
-# or
-yarn dev
+# About The Project
+
+Hirejob is a hiring website to make it easier to connect workers with recruiters. Workers can create account and display portfolios, work experiences, and skills on this website. And recruiters can create account to display company profile, search and hire workers based on their needs. Workers will be notified if they are hired by recruiter
+
+## Built With
+
+These are the libraries and service used for building this backend API
+
+- [NextJS](https://nextjs.org/)
+- [Bootstrap](https://getbootstrap.com/)
+- [React-icons](https://react-icons.github.io/react-icons/)
+- [Axios](https://axios-http.com)
+- [Sweetalert2](https://sweetalert2.github.io)
+
+# Getting Started
+
+## Prerequisites
+
+You'll need these programs installed before proceeding to installation
+
+- [Git](https://git-scm.com/downloads)
+- [Node.js](https://nodejs.org/en/download)
+
+This project requires [hirejob-backend](https://github.com/alifankebima/hirejob-backend) to function properly, follow the steps provided in the readme to install and run the backend API
+
+## Installation
+
+Follow this steps to run the server locally
+
+1. Clone this repository
+
+```sh
+git clone https://github.com/alifankebima/hirejob-frontend.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Change directory to hirejob-frontend
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```sh
+cd hirejob-frontend
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+3. Install all of the required modules
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```sh
+npm install
+```
 
-## Learn More
+4. Create and configure `.env.local` file in the root directory, example env are provided in [.env.local.example](./.env.local.example)
 
-To learn more about Next.js, take a look at the following resources:
+```env
+NEXT_PUBLIC_API_URL=[ Backend URL ]
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+5. Run this command to run the server in development environment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```sh
+npm run start
+```
 
-## Deploy on Vercel
+- Run this command to build this website into production ready
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```sh
+npm run build
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# Screenshots
+
+<table>
+ <tr>
+    <td><img width="350px" src="./docs/readme/login.png" border="0" alt="Login" /></td>
+    <td> <img width="350px" src="./docs/readme/register.png" border="0"  alt="Register" /></td>
+  </tr>
+   <tr>
+    <td>Login</td>
+    <td>Register</td>
+  </tr>
+   <tr>
+    <td><img width="350px" src="./docs/readme/home-page.png" border="0" alt="Home Page" /></td>
+    <td><img width="350px" src="./docs/readme/edit-profile.png" border="0" alt="Edit Profile" /> </td>
+  </tr>
+   <tr>
+    <td>Home Page</td>
+    <td>Edit Profile</td>
+  </tr>
+</table>
+
+# Related Project
+
+:rocket: [`Frontend Hirejob`](https://github.com/alifankebima/hirejob-frontend)
+
+:rocket: [`Backend Hirejob`](https://github.com/alifankebima/hirejob-backend)
+
+:rocket: [`Demo Hirejob`](https://hirejob-frontend.vercel.app)

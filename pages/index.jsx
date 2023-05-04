@@ -2,11 +2,12 @@ import Link from 'next/link';
 import { Fragment, useEffect } from 'react'
 import Navbar from '../components/Navbar'
 import Button from '../components/Button'
+import Image from 'next/image';
+import LandingPage1 from '../public/img/landing-page/landing-page-1.png';
+import LandingPage2 from '../public/img/landing-page/landing-page-2.png';
+import LandingPage3 from '../public/img/landing-page/landing-page-3.png';
 
 export default function Home() {
-  useEffect(() => {
-    document.title = "Peworld";
-  });
   
   return (
     <Fragment>
@@ -15,19 +16,19 @@ export default function Home() {
         <div className="row gy-5 mt-1">
           <div className="col-sm-12 col-md-6 d-flex flex-column justify-content-evenly">
             <h1 className='mt-5'>Talenta terbaik negeri untuk perubahan revolusi 4.0</h1>
-            <h6>Pekerja terbaik di peworld siap menghadapi industri 4.0</h6>
+            <h6>Pekerja terbaik di hirejob siap menghadapi industri 4.0</h6>
             <Link href='/worker'>
               <Button text="Mulai dari sekarang" />
             </Link>
           </div>
           <div className="col-sm-12 col-md-6">
-            <img src="img/landing-page/landing-page-1.png" className="img-fluid" alt="" />
+            <Image src={LandingPage1} className="img-fluid" alt="" />
           </div>
           <div className="col-sm-12 col-md-6">
-            <img src="img/landing-page/landing-page-2.png" className="img-fluid" alt="" />
+            <Image src={LandingPage2} className="img-fluid" alt="" />
           </div>
           <div className="col-sm-12 col-md-6 d-flex flex-column justify-content-center">
-            <h2>Kenapa harus mencari talent di peworld?</h2>
+            <h2>Kenapa harus mencari talent di hirejob?</h2>
             <ul>
               <li>Mencari kandidat berdasarkan skill dan domisili</li>
               <li>Talenta terbaik dengan kualifikasi bagus</li>
@@ -48,7 +49,7 @@ export default function Home() {
             </ul>
           </div>
           <div className="col-sm-12 col-md-6">
-            <img src="img/landing-page/landing-page-3.png" className="img-fluid" alt="" />
+            <Image src={LandingPage3} className="img-fluid" alt="" />
           </div>
         </div>
       </div>

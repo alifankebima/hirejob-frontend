@@ -17,7 +17,6 @@ const CandidateList = () => {
         setWorkers(res.data.data);
         setPagination(res.data.pagination)
         setSsrId(res.data.data[4]);
-        console.log(ssrId);
       })
       .catch((err) => console.log(err))
 
@@ -51,12 +50,12 @@ const CandidateList = () => {
       </div>
       <div className='mt-5'>
         {workers && workers.map((data) =>
-          <Candidates name={data.name} image={data.image} link={`/worker/${data.id}`} residence={data.residence} jobdesk={data.jobdesk} skill={data.skill} />
+          <Candidates key={data.id} name={data.name} image={data.image} link={`/worker/${data.id}`} residence={data.residence} jobdesk={data.jobdesk} skills={data.skills} />
         )}
         {/* {ssrId && <Candidates name={ssrId.name + " (SSR)"} image={ssrId.image} residence={ssrId.residence} jobdesk={ssrId.jobdesk} skill={ssrId.skill} link={`http://localhost:3000/worker/ssr/${ssrId.id}`} />} */}
       </div>
-      <div className='conainer mt-5'>
-        {/* {JSON.stringify(workers)} */}
+      {/* <div className='container mt-5'>
+
         <div className="d-flex flex-column">
           <nav aria-label="Page navigation example" className='align-self-center'>
             <ul className="pagination">
@@ -66,7 +65,7 @@ const CandidateList = () => {
             </ul>
           </nav>
         </div>
-      </div>
+      </div> */}
     </>
   )
 }
