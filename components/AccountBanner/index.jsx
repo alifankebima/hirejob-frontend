@@ -10,7 +10,7 @@ const AccountBanner = () => {
                 <div className={styles.overlay + " text-white fw-bold fs-1 align-middle d-flex flex-column justify-content-center"}>
                     <span>Temukan developer berbakat & terbaik di berbagai bidang keahlian</span>
                 </div>
-                <Image className={"img-fluid " + styles.image} crossOrigin='anonymous' src={AccountBannerImage} alt=""/>
+                <Image className={"img-fluid " + styles.image} src={AccountBannerImage} alt=""/>
             </div>
         </div>
     )

@@ -7,7 +7,7 @@ const Candidates = (props) => {
 
   return (
     <div className='container d-flex bg-white p-3'>
-      <Image src={props.image || ""} crossOrigin="anonymous" className="img-fluid rounded-circle" width={105} height={105} alt="Profile" />
+      <Image src={props.image || ""} className="img-fluid rounded-circle" width={105} height={105} alt="Profile" />
       <div className='d-flex flex-column ms-3'>
         <div className='fs-5'>{props.name}</div>
         <div className='text-secondary'>{props.jobdesk}</div>

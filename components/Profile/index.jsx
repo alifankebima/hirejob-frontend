@@ -8,7 +8,7 @@ import DefaultUser from '../../public/img/profile/default-user.png'
 const Profile = (props) => {
   return (
     <div className="col-sm-12 col-md-3 p-4 bg-white shadow-sm rounded d-flex flex-column">
-      <Image src={props.image || DefaultUser} crossOrigin="anonymous" width={150} height={150} className="img-fluid rounded-circle align-self-center" alt="Profile" />
+      <Image src={props.image || DefaultUser} width={150} height={150} className="img-fluid rounded-circle align-self-center" alt="Profile" />
       <div className='mt-3 fw-bold fs-5'>{props.name}</div>
       <div className='mt-2'>{props.jobdesk}</div>
       <div className='text-secondary mt-2'>{props.residence}</div>

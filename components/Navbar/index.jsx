@@ -82,7 +82,7 @@ const Navbar = (props) => {
     <nav className="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
       <div className="container">
         <Link className="navbar-brand text-purple" href="/">
-          <Image src={Logo} width={30} height={30} crossOrigin="anonymous" className='me-2' alt='hirejob' />
+          <Image src={Logo} width={30} height={30} className='me-2' alt='hirejob' />
           Hirejob
         </Link>
         <div className="ms-auto" id="navbarSupportedContent">

@@ -45,7 +45,7 @@ const Portfolio = (props) => {
               {props.workExperience && props.workExperience.map((item, index) =>
                 <>
                   <div className='d-flex'>
-                    <Image className="img p-3 mx-3 align-self-center" width={80} height={80} src={OfficeBuildingSmall} crossOrigin="anonymous" alt="Office building"/>
+                    <Image className="img p-3 mx-3 align-self-center" width={80} height={80} src={OfficeBuildingSmall} alt="Office building"/>
                     <div className="d-flex flex-column flex-grow-1 gx-2">
                       <div>{item.jobdesk}</div>
                       <div>{item.company_name}</div>
