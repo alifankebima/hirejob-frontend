@@ -106,7 +106,7 @@ npm run build
   </tr>
    <tr>
     <td>Home Page</td>
-    <td>Edit Profile</td>
+    <td>Worker List</td>
   </tr>
 </table>
 

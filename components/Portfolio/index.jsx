@@ -10,7 +10,7 @@ const Portfolio = (props) => {
     <div className="col-sm-12 col-md-9 bg-white shadow-sm rounded p-4">
       <ul className="nav nav-pills mb-3" id="pills-tab" role="tablist">
         <li className="nav-item" role="presentation">
-          <button className={styles.PortfolioSelector + " active fw-normal me-3"} id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Portfolio</button>
+          <button className={styles.PortfolioSelector + " active fw-normal me-3"} id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Portofolio</button>
         </li>
         <li className="nav-item" role="presentation">
           <button className={styles.PortfolioSelector + " fw-normal"} id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Pengalaman Kerja</button>
