@@ -19,6 +19,7 @@ const notification = () => {
   useEffect(() => {
     setToken(localStorage.getItem("token"))
     setRole(localStorage.getItem("role"))
+
   }, [])
 
   const authWorker = {
@@ -52,7 +53,10 @@ const notification = () => {
     if(role == "worker"){
       if(router.isReady){
         axios.get(`${process.env.NEXT_PUBLIC_API_URL}/v1/worker/${router.query.id}/hire`)
-        .then((result) => setHire(result.data.data))
+        .then((result) => {
+          setHire(result.data.data)
+          console.log(result.data.data)
+        })
         .catch((error) => console.log(error))
       }
     }else if (role == "recruiter") {
@@ -69,13 +73,13 @@ const notification = () => {
         <div className="row">
           <div className={"col-md-12 px-3 " + styles.notifyContainer}>
             {role != "recruiter" ? (
-              <div className='fs-4 fw-bold my-2'>Notification</div>
+              <div className='fs-4 fw-bold my-2'>Notifikasi</div>
             ) : (
               <div className='fs-4 fw-bold my-2'>Hire list</div>
             )}
             {hire ? hire.map((data) =>
               <div key={data.id} className='d-flex'>
-                <Image src={data.image || DefaultUser} width={60} height={60} className="img rounded-circle align-self-center" alt="" />
+                <Image src={data.recruiter_image || DefaultUser} width={80} height={80} className="img rounded-circle align-self-center" alt="" />
                 <div className="d-flex flex-column justify-content-center ms-3 me-auto">
                   <div className="d-flex">
                     {role == "recruiter" ? (
@@ -94,7 +98,7 @@ const notification = () => {
                 </div>
                 {role == "recruiter" && (
                   <div className='align-self-center'>
-                    <Link href={`/worker/${router.query.id}/hire/${data.id}`}>
+                    <Link href={`/worker/${data.id_worker}/hire/${data.id}`}>
                       <button className='btn btn-secondary'>Edit</button>
                     </Link>
                   </div>

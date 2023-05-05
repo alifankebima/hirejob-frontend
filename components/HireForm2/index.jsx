@@ -5,6 +5,7 @@ import React, { useEffect, useState } from 'react'
 //for update hire crud
 const HireForm2 = (props) => {
   const router = useRouter();
+  const [token, setToken] = useState("");
 
   const [data, setData] = useState({
     id_worker: "",
@@ -34,15 +35,19 @@ const HireForm2 = (props) => {
     });
   };
 
-  const recruiterAuth = {
+  useEffect(() => {
+    setToken(localStorage.getItem("token"))
+  }, [])
+
+  const auth = {
     headers: {
-      Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNlOTdlZWIxLTM0ZDQtNGY2Ni04ZWIyLWM3ZDJiZmNlYTFkNyIsImVtYWlsIjoiYWxpZi5yZWNydWl0ZXJAZ21haWwuY29tIiwicm9sZSI6InJlY3J1aXRlciIsImlhdCI6MTY3ODQxMTQwMywiZXhwIjoxNjc4NDk3ODAzLCJpc3MiOiJoaXJlam9iIn0.iVNYGa8x9AmVjmLpMFACE5eIfc3pGdGjFl8brqX3Yqc`
+      Authorization: `Bearer ${token}`
     }
   }
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.put(`${process.env.NEXT_PUBLIC_API_URL}/v1/hire/${router.query.id_hire}`, data, recruiterAuth)
+    axios.put(`${process.env.NEXT_PUBLIC_API_URL}/v1/hire/${router.query.id_hire}`, data, auth)
       .then((res) => {
         console.log(res.data);
         alert("update success")

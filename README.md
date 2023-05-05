@@ -7,7 +7,7 @@
   <p align="center">
     <a href="https://github.com/alifankebima/hirejob-frontend"><strong>Explore the docs »</strong></a>
     <br />
-    <a href="https://hirejob-frontend.vercel.app">View Demo</a>
+    <a href="https://hirejob-frontend-alifankebima.vercel.app">View Demo</a>
     ·
     <a href="https://hirejob-backend-production-c841.up.railway.app">Api Demo</a>
   </p>
@@ -15,13 +15,12 @@
 
 ## Table of Contents
 
-- [Table of Contents](#table-of-contents)
 - [About The Project](#about-the-project)
   - [Built With](#built-with)
 - [Getting Started](#getting-started)
-  - [Prerequisite](#prerequisites)
+  - [Prerequisites](#prerequisites)
   - [Installation](#installation)
-  - [Documentation](#documentation)
+- [Screenshots](#screenshots)
 - [Related Project](#related-project)
 
 # About The Project
@@ -96,17 +95,33 @@ npm run build
     <td><img width="350px" src="./docs/readme/login.png" border="0" alt="Login" /></td>
     <td> <img width="350px" src="./docs/readme/register.png" border="0"  alt="Register" /></td>
   </tr>
-   <tr>
+  <tr>
     <td>Login</td>
     <td>Register</td>
   </tr>
-   <tr>
+  <tr>
     <td><img width="350px" src="./docs/readme/home-page.png" border="0" alt="Home Page" /></td>
-    <td><img width="350px" src="./docs/readme/edit-profile.png" border="0" alt="Edit Profile" /> </td>
+    <td><img width="350px" src="./docs/readme/worker-list.png" border="0" alt="Worker List" /> </td>
   </tr>
    <tr>
     <td>Home Page</td>
     <td>Worker List</td>
+  </tr>
+  <tr>
+    <td><img width="350px" src="./docs/readme/portfolio.png" border="0" alt="Portfolio" /></td>
+    <td><img width="350px" src="./docs/readme/work-experience.png" border="0" alt="Work Experience" /> </td>
+  </tr>
+   <tr>
+    <td>Worker Profile - Portfolio</td>
+    <td>Worker Profile - Work Experience</td>
+  </tr>
+    <tr>
+    <td><img width="350px" src="./docs/readme/hire.png" border="0" alt="Hire Worker" /></td>
+    <td><img width="350px" src="./docs/readme/notification.png" border="0" alt="Notification" /> </td>
+  </tr>
+   <tr>
+    <td>Worker Profile - Hire Worker</td>
+    <td>Notification</td>
   </tr>
 </table>
 
@@ -116,4 +131,4 @@ npm run build
 
 :rocket: [`Backend Hirejob`](https://github.com/alifankebima/hirejob-backend)
 
-:rocket: [`Demo Hirejob`](https://hirejob-frontend.vercel.app)
+:rocket: [`Demo Hirejob`](https://hirejob-frontend-alifankebima.vercel.app)

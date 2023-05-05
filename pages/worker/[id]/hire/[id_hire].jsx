@@ -19,7 +19,7 @@ const detailProfile = () => {
       axios.get(`${process.env.NEXT_PUBLIC_API_URL}/v1/worker/${router.query.id}`)
         .then((res) => {
           setWorker(res.data.data[0]);
-          
+          console.log(router.query.id)
         })
         .catch((err) => console.log(err))
     }
