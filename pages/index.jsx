@@ -8,7 +8,7 @@ import LandingPage2 from '../public/img/landing-page/landing-page-2.png';
 import LandingPage3 from '../public/img/landing-page/landing-page-3.png';
 
 export default function Home() {
-  
+
   return (
     <Fragment>
       <Navbar />
