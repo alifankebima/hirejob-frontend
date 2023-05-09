@@ -6,6 +6,7 @@ import Image from 'next/image';
 import LandingPage1 from '../public/img/landing-page/landing-page-1.png';
 import LandingPage2 from '../public/img/landing-page/landing-page-2.png';
 import LandingPage3 from '../public/img/landing-page/landing-page-3.png';
+import Footer from '../components/Footer'
 
 export default function Home() {
 
@@ -13,7 +14,7 @@ export default function Home() {
     <Fragment>
       <Navbar />
       <div className='container'>
-        <div className="row gy-5 mt-1">
+        <div className="row gy-5 mt-1 mb-5">
           <div className="col-sm-12 col-md-6 d-flex flex-column justify-content-evenly">
             <h1 className='mt-5'>Talenta terbaik negeri untuk perubahan revolusi 4.0</h1>
             <h6>Pekerja terbaik di hirejob siap menghadapi industri 4.0</h6>
@@ -53,6 +54,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Footer/>
     </Fragment>
   )
 }
